@@ -10,34 +10,21 @@ function BrandLogo(): Readonly<React.ReactElement> {
       className="flex justify-center items-center transition-all duration-700 hover:scale-95 hover:-translate-y-2"
     >
       <svg
-        width="64"
-        height="64"
-        viewBox="0 0 64 64"
+        width="40"
+        height="40"
+        viewBox="0 0 299 337"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M19.4727 26.1797C17.8334 24.4053 14.6462 24.6754 14.6444 27.0911C14.6371 37.1284 22.7679 45.2711 32.8052 45.2785C42.8424 45.2858 50.9852 37.1549 50.9925 27.1176C50.9943 24.699 47.8033 24.425 46.1594 26.1992C42.8369 29.7851 38.0859 32.0283 32.8118 32.0244C27.5377 32.0205 22.79 29.7705 19.4727 26.1797Z"
+          d="M256.072 240.003C251.347 252.712 243.821 264.239 233.926 273.924C224.03 283.61 211.957 291.265 198.397 296.452C184.838 301.639 170.056 304.258 154.896 304.157C139.737 304.057 124.496 301.24 110.045 295.867C95.5936 290.494 82.2145 282.67 70.6715 272.842C59.1286 263.015 49.6477 251.376 42.7704 238.59C35.893 225.804 31.7538 212.121 30.5891 198.323C29.4244 184.525 31.257 170.883 35.9823 158.173L146.027 199.088L256.072 240.003Z"
           fill="black"
         />
-        <ellipse
-          cx="6.77307"
-          cy="0.816453"
-          rx="6.77307"
-          ry="0.816453"
-          transform="matrix(0.999619 0.0275695 -0.0170244 0.999856 26.0566 13.0774)"
+        <path
+          d="M258.033 61.0878C263.371 69.1099 266.86 78.2487 268.302 87.9821C269.744 97.7156 269.111 107.853 266.437 117.816C263.764 127.779 259.103 137.372 252.721 146.048C246.339 154.724 238.361 162.312 229.243 168.379C220.124 174.447 210.043 178.875 199.576 181.411C189.109 183.946 178.46 184.54 168.237 183.158C158.015 181.776 148.419 178.445 139.998 173.356C131.577 168.266 124.495 161.517 119.157 153.495L188.595 107.292L258.033 61.0878Z"
           fill="black"
         />
-        <ellipse
-          cx="13.4748"
-          cy="1.27004"
-          rx="13.4748"
-          ry="1.27004"
-          transform="matrix(0.999619 0.0275695 -0.0170244 0.999856 19.356 17.6145)"
-          fill="black"
-        />
+        <circle cx="135.5" cy="61.895" r="21.5" fill="black" />
       </svg>
     </Link>
   )
@@ -54,9 +41,6 @@ function NavItem({ item }: { item: Nav }): React.ReactElement {
 function Navs(): React.ReactElement {
   const list: Nav[] = [
     { label: 'Works', path: '/works' },
-    { label: 'Pricing', path: '/pricing' },
-    { label: 'Offer', path: '/offers' },
-    { label: 'Resources', path: '/shop' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ]
@@ -85,7 +69,7 @@ export default function Header(): Readonly<React.ReactElement> {
         >
           <Link
             href={
-              'https://cal.com/nyomansunima/discovery-call-with-nyoman-sunima-weebo'
+              'https://cal.com/nyomansunima/discovery-call-with-nyoman-sunima-sonibble'
             }
             target="_blank"
           >

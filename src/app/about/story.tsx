@@ -16,13 +16,13 @@ export default function Story() {
 
             <div className="flex flex-col gap-10 mt-14">
               <p className="text-lg font-medium leading-relaxed">
-                Before Weebo was born in April 2024, we were just a friendly
+                Before Sonibble was born in April 2024, we were just a friendly
                 bunch of freelancers. Each of us with a startup story, a passion
                 for bootstrapping businesses, and a love for web design. Our
                 passion for launching new businesses led us to seek how we can
                 help brands stand out on the internet. With a mission to help
                 brands create unique and superior user experiences, we created
-                Weebo, a business focused on web design.
+                Sonibble, a business focused on web design.
               </p>
               <p className="text-lg font-medium leading-relaxed">
                 Today, we spread the wings and focus on helping business and

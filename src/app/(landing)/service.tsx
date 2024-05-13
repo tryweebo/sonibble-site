@@ -56,16 +56,17 @@ export default function Service(): Readonly<React.ReactElement> {
       <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col">
           <div className="flex">
-            <SectionLabel>What we do</SectionLabel>
+            <SectionLabel>What We Do</SectionLabel>
           </div>
           <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-8/12 mt-10">
-            Focus on built, update, scale & maintain website
+            From design, website, campaign, branding, ads, and everything you
+            need
           </h2>
           <p className="text-lg font-medium leading-relaxed desktop:w-6/12 mt-8">
-            We help you create, redesign, update, change style, refresh migrate
-            website. We do everything, so you can focus on your goals and
-            scaling. We are commit to focus on design and develop web for
-            future.
+            We create your design, website, landing page, campaign,
+            presentation, email, templates, content, ads, leads, logo &
+            branding, trackings needs. So you can focus on manage your business
+            and scale it.
           </p>
 
           <div className="relative mt-40 w-screen">

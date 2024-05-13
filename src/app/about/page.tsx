@@ -10,18 +10,18 @@ import Target from './target'
 import Teams from './teams'
 
 export const metadata: Metadata = {
-  title: 'About Us | Weebo',
+  title: 'About Us | Sonibble',
   description:
     'Get to know who we are and what we do. We are the best web design partner for startups, business and scale teams',
   openGraph: {
     ...defaultOpenGraphMetadata,
-    title: 'About Us | Weebo',
+    title: 'About Us | Sonibble',
     description:
       'Get to know who we are and what we do. We are the best web design partner for startups, business and scale teams',
   },
   twitter: {
     ...defaultTwitterMetadata,
-    title: 'About Us | Weebo',
+    title: 'About Us | Sonibble',
     description:
       'Get to know who we are and what we do. We are the best web design partner for startups, business and scale teams',
   },

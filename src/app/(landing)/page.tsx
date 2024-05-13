@@ -11,22 +11,23 @@ import Benefits from './benefits'
 import Offers from './offers'
 import Resources from './resources'
 import FAQs from './faqs'
+import Process from './process'
 
 export const metadata: Metadata = {
-  title: 'Your Web Design Partner On The Go | Weebo',
+  title: 'Your Business Growth & Success Partner | Sonibble',
   description:
-    'Unlimited web design partner for growing startups, agency & enterprise',
+    'We help small business, startups, and professional grow, scale & win the game',
   openGraph: {
     ...defaultOpenGraphMetadata,
-    title: 'Your Web Design Partner On The Go | Weebo',
+    title: 'Your Business Growth & Success Partner | Sonibble',
     description:
-      'Unlimited web design partner for growing startups, agency & enterprise',
+      'We help small business, startups, and professional grow, scale & win the game',
   },
   twitter: {
     ...defaultTwitterMetadata,
-    title: 'Your Web Design Partner On The Go | Weebo',
+    title: 'Your Business Growth & Success Partner | Sonibble',
     description:
-      'Unlimited web design partner for growing startups, agency & enterprise',
+      'We help small business, startups, and professional grow, scale & win the game',
   },
 }
 
@@ -34,6 +35,7 @@ export default function HomePage(): Readonly<React.ReactElement> {
   return (
     <main className="">
       <Hero />
+      <Process />
       <BestFits />
       <Service />
       <Benefits />

@@ -8,21 +8,18 @@ import AnimationProvider from '~/components/provider/animation'
 import { settings } from '~/lib/config/settings'
 
 export const metadata: Metadata = {
-  applicationName: 'Weebo',
+  applicationName: 'Sonibble',
   keywords: [
     'Web Designer',
-    'Shopify Developer',
-    'Web Developer',
-    'Webflow Expert',
-    'Framer Expert',
-    'Squarespace',
-    'Seo',
-    'Wix Developer',
-    'Fullstack',
+    'Landing Page',
+    'SEO',
+    'Growth Partner',
+    'Marketing Agency',
+    'Web Design Agency',
   ],
-  authors: [{ name: 'Weebo' }],
-  publisher: 'Weebo',
-  creator: 'Weebo',
+  authors: [{ name: 'Sonibble' }],
+  publisher: 'Sonibble',
+  creator: 'Sonibble',
   metadataBase: new URL(settings.app.host),
 }
 

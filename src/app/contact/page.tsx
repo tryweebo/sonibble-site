@@ -7,20 +7,20 @@ import {
 import { StrokeLineBackground } from '~/components/common/bg'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Weebo',
+  title: 'Contact Us | Sonibble',
   description:
-    'Get in touch with us @Weebo teams. Connect and ask something in your head and start collaborate',
+    'Get in touch with us @Sonibble teams. Connect and ask something in your head and start collaborate',
   openGraph: {
     ...defaultOpenGraphMetadata,
-    title: 'Contact Us | Weebo',
+    title: 'Contact Us | Sonibble',
     description:
-      'Get in touch with us @Weebo teams. Connect and ask something in your head and start collaborate',
+      'Get in touch with us @Sonibble teams. Connect and ask something in your head and start collaborate',
   },
   twitter: {
     ...defaultTwitterMetadata,
-    title: 'Contact Us | Weebo',
+    title: 'Contact Us | Sonibble',
     description:
-      'Get in touch with us @Weebo teams. Connect and ask something in your head and start collaborate',
+      'Get in touch with us @Sonibble teams. Connect and ask something in your head and start collaborate',
   },
 }
 
@@ -39,15 +39,15 @@ export default function ContactPage() {
               Get in touch now
             </h2>
             <p className="text-lg font-medium leading-relaxed desktop:w-5/12 mt-14">
-              We build sites that make a difference and help you stand out from
-              your competition. Learn about our approach, team, and capabilities
-              that make us one of the leading partner.
+              We build experience that make a difference and help you stand out
+              from your competition. Learn about our approach, team, and
+              capabilities that make us one of the leading partner.
             </p>
 
             <div className="grid grid-cols-1 laptop:grid-cols-4 desktop:grid-cols-5 gap-5 mt-24">
               <Link
                 href={
-                  'https://cal.com/nyomansunima/discovery-call-with-nyoman-sunima-weebo'
+                  'https://cal.com/nyomansunima/discovery-call-with-nyoman-sunima-sonibble'
                 }
                 target="_blank"
                 className="flex justify-center items-center h-36 bg-secondary border-border border-2 rounded-3xl transition-all duration-500 hover:scale-95 text-lg font-medium"
@@ -61,7 +61,7 @@ export default function ContactPage() {
                 FAQs
               </Link>
               <Link
-                href={'https://twitter.com/tryweebo'}
+                href={'https://twitter.com/wearesonibble'}
                 target="_blank"
                 className="flex justify-center items-center h-36 bg-secondary border-border border-2 rounded-3xl transition-all duration-500 hover:scale-95 text-lg font-medium"
               >

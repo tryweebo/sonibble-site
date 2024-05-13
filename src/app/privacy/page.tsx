@@ -6,16 +6,16 @@ import {
 } from '~/app/shared-metadata'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Weebo',
+  title: 'Privacy Policy | Sonibble',
   description: 'Read our privacy policy and how we use your data',
   openGraph: {
     ...defaultOpenGraphMetadata,
-    title: 'Privacy Policy | Weebo',
+    title: 'Privacy Policy | Sonibble',
     description: 'Read our privacy policy and how we use your data',
   },
   twitter: {
     ...defaultTwitterMetadata,
-    title: 'Privacy Policy | Weebo',
+    title: 'Privacy Policy | Sonibble',
     description: 'Read our privacy policy and how we use your data',
   },
 }
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
             <p>
               This Privacy Policy outlines the information practices and
               procedures followed by{' '}
-              <Link href="https://weebo.digital">https://weebo.digital</Link>{' '}
+              <Link href="https://sonibble.com">https://sonibble.com</Link>{' '}
               ("we," "us," or "our") regarding the collection, use, and
               disclosure of personal information when you access and use our
               website (the "Website"). We are committed to protecting your

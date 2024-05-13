@@ -6,18 +6,18 @@ import {
 } from '~/app/shared-metadata'
 
 export const metadata: Metadata = {
-  title: 'Term of use | Weebo',
+  title: 'Term of use | Sonibble',
   description:
     'Read about we are using your data and manage your privacy and agree with our privacy policy',
   openGraph: {
     ...defaultOpenGraphMetadata,
-    title: 'Term of use | Weebo',
+    title: 'Term of use | Sonibble',
     description:
       'Read about we are using your data and manage your privacy and agree with our privacy policy',
   },
   twitter: {
     ...defaultTwitterMetadata,
-    title: 'Term of use | Weebo',
+    title: 'Term of use | Sonibble',
     description:
       'Read about we are using your data and manage your privacy and agree with our privacy policy',
   },
@@ -34,10 +34,10 @@ export default function TermsPage() {
             </h2>
 
             <p>
-              Welcome to Weebo These Terms of Use govern your use of our
+              Welcome to Sonibble These Terms of Use govern your use of our
               website, located at 
-              <Link href={'https://weebo.digital'}>
-                https://weebo.digital
+              <Link href={'https://sonibble.com'}>
+                https://sonibble.com
               </Link>{' '}
               Please read these terms carefully before accessing or using our
               website.
@@ -53,7 +53,7 @@ export default function TermsPage() {
             <h3>Intellectual Property</h3>
             <p>
               All content on our website, including but not limited to text,
-              graphics, logos, images, and software, is the property of Weebo
+              graphics, logos, images, and software, is the property of Sonibble
               and is protected by intellectual property laws. You may not use,
               reproduce, distribute, or modify any content from our website
               without prior written permission from us.
@@ -101,7 +101,7 @@ export default function TermsPage() {
             <h3>Limitation of Liability</h3>
             <p>
               In no event shall{' '}
-              <Link href={'https://weebo.digital'}>https://weebo.digital</Link>
+              <Link href={'https://sonibble.com'}>https://sonibble.com</Link>
                or its affiliates be liable for any direct, indirect, incidental,
               consequential, or punitive damages arising out of or in connection
               with your use of our website. This includes, but is not limited

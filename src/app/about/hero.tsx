@@ -135,12 +135,12 @@ export default function Hero(): Readonly<React.ReactElement> {
       <div className="px-5 laptop:px-0 container mx-auto py-28 laptop:py-48 relative">
         <div className="flex flex-col">
           <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-8/12">
-            Meet Weebo, partner that focus on building website with purpose
+            Meet Sonibble, Your growth & success business partner
           </h2>
           <p className="text-lg font-medium leading-relaxed desktop:w-5/12 mt-14">
-            We build sites that make a difference and help you stand out from
-            your competition. Learn about our approach, team, and capabilities
-            that make us one of the leading partner.
+            We build experience that make a difference and help you stand out
+            from your competition. Learn about our approach, team, and
+            capabilities that make us one of the leading partner.
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function Target() {
               </p>
               <p className="text-lg font-medium leading-relaxed">
                 Creating unique customer experiences will allow you to stand out
-                from the crowd and generate quality leads. Having “Weebo” at
+                from the crowd and generate quality leads. Having “Sonibble” at
                 your side will help you get your business off the ground or grow
                 faster than ever before.
               </p>

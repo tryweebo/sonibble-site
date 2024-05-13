@@ -48,10 +48,10 @@ export default function BestFits(): Readonly<React.ReactElement> {
       <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col">
           <div className="flex">
-            <SectionLabel>Our best fits</SectionLabel>
+            <SectionLabel>Our Best Fits</SectionLabel>
           </div>
           <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-9/12 mt-10">
-            We’re best partner for unlimited website services
+            We’re best partner for your growth & success business
           </h2>
           <p className="text-lg font-medium leading-relaxed desktop:w-6/12 mt-8">
             We help business to create their own standing website, agency,
@@ -64,24 +64,19 @@ export default function BestFits(): Readonly<React.ReactElement> {
           <div className="mt-40 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 gap-6">
             <CardItem
               image="/images/illustration/outre-6.png"
-              title="Startups & scaleups"
-              description="Startups and scale up business that need to redesign or built new site."
+              title="Startups & SMEs"
+              description="Startups, small and medium business that need to grow their customers, sales, and increase the profit"
               className="laptop:col-start-2"
             />
             <CardItem
-              image="/images/illustration/fundraising-16.png"
-              title="Agency"
-              description="Creative agency, designer agency that need to extend the teams."
-            />
-            <CardItem
               image="/images/illustration/fundraising-10.png"
-              title="Enterprise"
-              description="Company or enterprise that need to maintain, redesign, or migrate website."
+              title="Creative & Luxury"
+              description="Best for creative, photographer, content creator and luxury brand that want to sread and reach global customers"
             />
             <CardItem
               image="/images/illustration/fundraising-19.png"
-              title="Designer"
-              description="Designer that need to create a website for the client to scale up."
+              title="Home Services"
+              description="Contractor that focus on home services who want to scale their business by reach more customers"
             />
             <CardItem
               image="/images/illustration/fundraising-12.png"
@@ -90,8 +85,8 @@ export default function BestFits(): Readonly<React.ReactElement> {
             />
             <CardItem
               image="/images/illustration/fundraising-1.png"
-              title="Marketing"
-              description="Marketing teams that need professional website."
+              title="Online Business"
+              description="Enterpreneur, coaching, side hustle and online business that want to create better experience and lift the profit"
             />
           </div>
         </div>

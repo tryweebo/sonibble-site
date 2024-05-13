@@ -37,44 +37,31 @@ export default function Footer(): Readonly<React.ReactElement> {
           <div className="flex flex-col">
             <div className="flex gap-3 items-center">
               <svg
-                width="42"
-                height="42"
-                viewBox="0 0 64 64"
+                width="40"
+                height="40"
+                viewBox="0 0 299 337"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M19.4727 26.1797C17.8334 24.4053 14.6462 24.6754 14.6444 27.0911C14.6371 37.1284 22.7679 45.2711 32.8052 45.2785C42.8424 45.2858 50.9852 37.1549 50.9925 27.1176C50.9943 24.699 47.8033 24.425 46.1594 26.1992C42.8369 29.7851 38.0859 32.0283 32.8118 32.0244C27.5377 32.0205 22.79 29.7705 19.4727 26.1797Z"
+                  d="M256.072 240.003C251.347 252.712 243.821 264.239 233.926 273.924C224.03 283.61 211.957 291.265 198.397 296.452C184.838 301.639 170.056 304.258 154.896 304.157C139.737 304.057 124.496 301.24 110.045 295.867C95.5936 290.494 82.2145 282.67 70.6715 272.842C59.1286 263.015 49.6477 251.376 42.7704 238.59C35.893 225.804 31.7538 212.121 30.5891 198.323C29.4244 184.525 31.257 170.883 35.9823 158.173L146.027 199.088L256.072 240.003Z"
                   fill="black"
                 />
-                <ellipse
-                  cx="6.77307"
-                  cy="0.816453"
-                  rx="6.77307"
-                  ry="0.816453"
-                  transform="matrix(0.999619 0.0275695 -0.0170244 0.999856 26.0566 13.0774)"
+                <path
+                  d="M258.033 61.0878C263.371 69.1099 266.86 78.2487 268.302 87.9821C269.744 97.7156 269.111 107.853 266.437 117.816C263.764 127.779 259.103 137.372 252.721 146.048C246.339 154.724 238.361 162.312 229.243 168.379C220.124 174.447 210.043 178.875 199.576 181.411C189.109 183.946 178.46 184.54 168.237 183.158C158.015 181.776 148.419 178.445 139.998 173.356C131.577 168.266 124.495 161.517 119.157 153.495L188.595 107.292L258.033 61.0878Z"
                   fill="black"
                 />
-                <ellipse
-                  cx="13.4748"
-                  cy="1.27004"
-                  rx="13.4748"
-                  ry="1.27004"
-                  transform="matrix(0.999619 0.0275695 -0.0170244 0.999856 19.356 17.6145)"
-                  fill="black"
-                />
+                <circle cx="135.5" cy="61.895" r="21.5" fill="black" />
               </svg>
-              <span className="text-xl font-bold leading-none">Weebo</span>
+              <span className="text-xl font-bold leading-none">Sonibble</span>
             </div>
             <p className="text-base font-medium leading-relaxed laptop:w-8/12 mt-4">
-              Unlimited web design partner for growing startups, agency &
-              enterprise.
+              We help small business, startups, and professional grow, scale &
+              win the game
             </p>
 
             <ul className="flex gap-4 mt-6">
-              <SocialIcon link="https://linkedin.com/company/tryweebo">
+              <SocialIcon link="https://linkedin.com/company/wearesonibble">
                 <svg
                   width="24"
                   height="24"
@@ -100,7 +87,7 @@ export default function Footer(): Readonly<React.ReactElement> {
                   />
                 </svg>
               </SocialIcon>
-              <SocialIcon link="mailto:tryweebo@gmail.com">
+              <SocialIcon link="mailto:wearesonibble@gmail.com">
                 <svg
                   width="24"
                   height="24"
@@ -133,7 +120,7 @@ export default function Footer(): Readonly<React.ReactElement> {
                   />
                 </svg>
               </SocialIcon>
-              <SocialIcon link="https://twitter.com/tryweebo">
+              <SocialIcon link="https://twitter.com/wearesonibble">
                 <svg
                   width="24"
                   height="24"
@@ -150,28 +137,7 @@ export default function Footer(): Readonly<React.ReactElement> {
                   />
                 </svg>
               </SocialIcon>
-              <SocialIcon link="https://youtube.com/@tryweebo">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
-                    stroke="#141B34"
-                    strokeWidth="1.5"
-                  />
-                  <path
-                    d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
-                    stroke="#141B34"
-                    strokeWidth="1.5"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </SocialIcon>
-              <SocialIcon link="https://facebook.com/tryweebo">
+              <SocialIcon link="https://facebook.com/wearesonibble">
                 <svg
                   width="24"
                   height="24"
