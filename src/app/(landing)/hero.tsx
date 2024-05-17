@@ -19,7 +19,7 @@ export default function Hero(): Readonly<React.ReactElement> {
             <br />
             win the game
           </h2>
-          <p className="text-lg font-medium leading-relaxed desktop:w-5/12 mt-14">
+          <p className="text-lg font-medium leading-relaxed desktop:w-5/12 mt-14 text-center">
             Your growth partner for your business, help you create better
             experience, more leads, sales, buyers, customers for your business.
             We give you solutions and grow your business together.
