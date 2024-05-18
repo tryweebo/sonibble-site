@@ -32,7 +32,7 @@ function BrandLogo(): Readonly<React.ReactElement> {
 
 function NavItem({ item }: { item: Nav }): React.ReactElement {
   return (
-    <li className="flex items-center justify-center px-4 py-3 rounded-full bg-transparent cursor-pointer text-base font-medium transition-all duration-700 hover:bg-secondary hover:text-secondary-foreground leading-none">
+    <li className="flex items-center justify-center px-4 py-3 rounded-full bg-transparent cursor-pointer text-base font-medium transition-all duration-700 hover:bg-border hover:text-secondary-foreground leading-none">
       <Link href={item.path || '#'}>{item.label}</Link>
     </li>
   )
@@ -46,7 +46,7 @@ function Navs(): React.ReactElement {
   ]
 
   return (
-    <nav className="hidden laptop:flex items-center border border-border p-[6px] rounded-full bg-background">
+    <nav className="hidden laptop:flex items-center border border-border p-[6px] rounded-full bg-secondary">
       <ul className="flex items-center">
         {list.map((item, index) => (
           <NavItem item={item} key={index} />
@@ -60,7 +60,7 @@ export default function Header(): Readonly<React.ReactElement> {
   return (
     <header className="flex items-center px-5 laptop:px-16 py-3 fixed top-0 inset-x-0 justify-between z-50">
       <BrandLogo />
-      <div className="flex items-center gap-16">
+      <div className="flex items-center gap-10">
         <Navs />
         <Button
           asChild

@@ -95,10 +95,6 @@ function GridList(): React.ReactElement {
 export default function Resources(): Readonly<React.ReactElement> {
   return (
     <section className="relative">
-      <div className="absolute">
-        <StrokeLineBackground />
-      </div>
-
       <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col">
           <div className="flex">

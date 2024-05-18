@@ -7,9 +7,6 @@ export default function NotFoundPage() {
   return (
     <main>
       <section className="relative">
-        <div className="absolute right-0">
-          <StrokeLineBackground />
-        </div>
         <div className="px-5 laptop:px-0 container mx-auto py-48 relative flex flex-col laptop:flex-row laptop:gap-28">
           <div className="flex flex-col laptop:w-7/12">
             <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading">

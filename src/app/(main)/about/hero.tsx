@@ -3,10 +3,6 @@ import { StrokeLineBackground } from '~/components/common/bg'
 export default function Hero(): Readonly<React.ReactElement> {
   return (
     <section className="relative">
-      <div className="absolute">
-        <StrokeLineBackground />
-      </div>
-
       <div className="absolute right-28 top-56 hidden laptop:block">
         <svg
           width="204"

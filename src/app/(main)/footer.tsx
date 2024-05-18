@@ -53,7 +53,9 @@ export default function Footer(): Readonly<React.ReactElement> {
                 />
                 <circle cx="135.5" cy="61.895" r="21.5" fill="black" />
               </svg>
-              <span className="text-xl font-bold leading-none">Sonibble</span>
+              <span className="text-xl font-semibold leading-none">
+                Sonibble
+              </span>
             </div>
             <p className="text-base font-medium leading-relaxed laptop:w-8/12 mt-4">
               We help small business, startups, and professional grow, scale &

@@ -8,18 +8,14 @@ import { Button } from '~/components/ui/button'
 export default function Hero(): Readonly<React.ReactElement> {
   return (
     <section className="relative">
-      <div className="absolute justify-center flex inset-x-0">
-        <StrokeLineBackground />
-      </div>
-
       <div className="px-5 laptop:px-0 container mx-auto py-36 laptop:py-48 relative">
         <div className="flex flex-col items-center">
           <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-10/12 text-center">
-            We help small business, startups, and professional grow, scale &
+            We help business, startups, enterprise to grow, scale &
             <br />
             win the game
           </h2>
-          <p className="text-lg font-medium leading-relaxed desktop:w-5/12 mt-14 text-center">
+          <p className="text-lg font-medium leading-relaxed desktop:w-6/12 mt-14 text-center">
             Your growth partner for your business, help you create better
             experience, more leads, sales, buyers, customers for your business.
             We give you solutions and grow your business together.

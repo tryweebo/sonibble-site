@@ -108,10 +108,6 @@ function FAQList(): Readonly<React.ReactElement> {
 export default function FAQs(): Readonly<React.ReactElement> {
   return (
     <section className="relative flex justify-center bg-[#F8FCFF]">
-      <div className="absolute top-24">
-        <StrokeLineBackground />
-      </div>
-
       <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col items-center mx-auto">
           <div className="flex justify-center">

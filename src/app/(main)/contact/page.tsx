@@ -28,9 +28,6 @@ export default function ContactPage() {
   return (
     <main>
       <section className="relative">
-        <div className="absolute">
-          <StrokeLineBackground />
-        </div>
         <div className="px-5 laptop:px-0 container mx-auto py-28 laptop:py-48 relative">
           <div className="flex flex-col">
             <h2 className="text-5xl laptop:text-7xl !leading-tight font-medium font-heading desktop:w-9/12">

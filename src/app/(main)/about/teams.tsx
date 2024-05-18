@@ -66,9 +66,6 @@ function GridList() {
 export default function Teams(): Readonly<React.ReactElement> {
   return (
     <section className="relative flex justify-center">
-      <div className="absolute">
-        <StrokeLineBackground />
-      </div>
       <div className="px-5 laptop:px-0 container mx-auto py-36 relative">
         <div className="flex flex-col items-center mx-auto">
           <div className="flex justify-center">
