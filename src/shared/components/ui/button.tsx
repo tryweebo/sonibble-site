@@ -15,8 +15,8 @@ const buttonVariants = cva(
           'bg-secondary text-secondary-foreground border border-transparent hover:bg-secondary/60 hover:border-border',
       },
       size: {
-        base: 'h-10 px-4 rounded-xl text-sm',
-        sm: 'h-9 px-3 rounded-full',
+        base: 'h-10 px-4 rounded-xl !text-sm',
+        sm: 'h-9 px-3 rounded-xl',
         lg: 'h-14 px-5 rounded-2xl',
         icon: 'h-10 w-10 rounded-2xl text-sm bg-surface',
       },
