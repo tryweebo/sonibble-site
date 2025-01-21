@@ -5,7 +5,6 @@ import { mergeClass } from '@shared/utils'
 const footerMenus = [
   { label: 'Privacy policy', href: '/privacy' },
   { label: 'Terms of use', href: '/terms' },
-  { label: 'FAQs', href: '/faqs' },
 ]
 
 type MenuItemProps = {
