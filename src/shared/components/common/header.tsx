@@ -4,11 +4,6 @@ import Link from 'next/link'
 import { Logo } from './logo'
 import { Button } from '../ui/button'
 
-type NavItemProps = {
-  href: string
-  children: React.ReactNode
-}
-
 function Brand(): React.ReactElement {
   return (
     <Link
@@ -19,6 +14,11 @@ function Brand(): React.ReactElement {
       <span>Sonibble</span>
     </Link>
   )
+}
+
+type NavItemProps = {
+  href: string
+  children: React.ReactNode
 }
 
 function NavItem({ href, children }: NavItemProps): React.ReactElement {
@@ -33,7 +33,11 @@ function NavItem({ href, children }: NavItemProps): React.ReactElement {
 }
 
 function Navigation(): React.ReactElement {
-  return <nav className="flex flex-1 gap-6 items-center"></nav>
+  return (
+    <nav className="flex flex-1 gap-6 items-center">
+      <NavItem href={'/'}>Works</NavItem>
+    </nav>
+  )
 }
 
 function Actions(): React.ReactElement {
