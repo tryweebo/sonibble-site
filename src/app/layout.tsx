@@ -8,37 +8,34 @@ import { Footer, Header, Toaster, CenteredLayout } from '@shared/components'
 import { fonts } from '@shared/fonts'
 
 export const metadata: Metadata = {
-  title: 'Nyoman Sunima',
+  title: 'Your Business Growth & Success Partner | Sonibble',
   description:
-    'Focused on crafting digital products, website, web app, mobile app to help business.',
+    'We help small business, startups, and professional grow, scale & win the game',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Nyoman Sunima',
+    title: 'Your Business Growth & Success Partner | Sonibble',
     description:
-      'Focused on crafting digital products, website, web app, mobile app to help business.',
+      'We help small business, startups, and professional grow, scale & win the game',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Nyoman Sunima',
+    title: 'Your Business Growth & Success Partner | Sonibble',
     description:
-      'Focused on crafting digital products, website, web app, mobile app to help business.',
+      'We help small business, startups, and professional grow, scale & win the game',
   },
-  applicationName: 'Nyoman Sunima',
+  applicationName: 'Your Business Growth & Success Partner | Sonibble',
   keywords: [
-    'Product Designer',
-    'UI UX Designer',
     'Web Designer',
-    'Shopify Developer',
-    'Web Developer',
-    'Webflow Expert',
-    'Framer Expert',
-    'Squarespace',
-    'Wix Developer',
-    'Fullstack',
-    'Mobile Developer',
-    'Indie Hacker',
+    'Landing Page',
+    'SEO',
+    'Growth Partner',
+    'Marketing Agency',
+    'Web Design Agency',
   ],
-  authors: [{ name: 'Nyoman Sunima' }],
+  authors: [
+    { name: 'Nyoman Sunima', url: 'https://www.nyomansunima.one' },
+    { name: 'Weebo', url: 'https://www.tryweeboo.one' },
+  ],
   publisher: 'Nyoman Sunima',
   creator: 'Nyoman Sunima',
   metadataBase: new URL(config.app.host),
@@ -68,7 +65,7 @@ export default function RootLayout({
           >
             <CenteredLayout>
               <Header />
-              <main className="min-h-screen pb-28 tablet:pb-56">
+              <main className="min-h-screen tablet:pt-16 pb-28 tablet:pb-56">
                 {children}
               </main>
               <Footer />
