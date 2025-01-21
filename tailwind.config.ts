@@ -76,22 +76,22 @@ const config: Config = {
             },
 
             strong: {
-              fontWeight: '500',
+              fontWeight: '400',
             },
 
             h1: {
               fontSize: theme('fontSize.xl'),
-              fontWeight: '500',
+              fontWeight: '400',
             },
 
             h2: {
               fontSize: theme('fontSize.lg'),
-              fontWeight: '500',
+              fontWeight: '400',
             },
 
             h3: {
               fontSize: theme('fontSize.base'),
-              fontWeight: '500',
+              fontWeight: '400',
             },
           },
         },
