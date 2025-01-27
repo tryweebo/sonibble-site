@@ -8,7 +8,7 @@ const config: Config = {
   darkMode: ['selector'],
   theme: {
     fontFamily: {
-      sans: ['var(--font-inter)'],
+      sans: ['var(--font-figtree)'],
     },
     screens: {
       tablet: '640px',
@@ -16,11 +16,8 @@ const config: Config = {
       desktop: '1280px',
     },
     extend: {
-      fontSize: {
-        sm: '.84375rem',
-        base: '.9375rem',
-        lg: '1.03125rem',
-        xl: '1.125rem',
+      lineHeight: {
+        tight: '1.1',
       },
       colors: {
         background: 'hsl(var(--color-background))',
@@ -81,17 +78,17 @@ const config: Config = {
 
             h1: {
               fontSize: theme('fontSize.xl'),
-              fontWeight: '400',
+              fontWeight: '500',
             },
 
             h2: {
               fontSize: theme('fontSize.lg'),
-              fontWeight: '400',
+              fontWeight: '500',
             },
 
             h3: {
               fontSize: theme('fontSize.base'),
-              fontWeight: '400',
+              fontWeight: '500',
             },
           },
         },
