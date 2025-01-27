@@ -11,7 +11,7 @@ function Brand(): React.ReactElement {
       className="flex items-center gap-3 transition-all duration-300 hover:-translate-x-1"
     >
       <Logo width={32} height={32} />
-      <span>Sonibble</span>
+      <span className="font-medium">Sonibble</span>
     </Link>
   )
 }
@@ -19,25 +19,6 @@ function Brand(): React.ReactElement {
 type NavItemProps = {
   href: string
   children: React.ReactNode
-}
-
-function NavItem({ href, children }: NavItemProps): React.ReactElement {
-  return (
-    <Link
-      href={href}
-      className="flex items-center gap-3 transition-all duration-300 text-sm text-foreground/60 hover:text-foreground font-medium"
-    >
-      {children}
-    </Link>
-  )
-}
-
-function Navigation(): React.ReactElement {
-  return (
-    <nav className="flex flex-1 gap-6 items-center">
-      <NavItem href={'/'}>Works</NavItem>
-    </nav>
-  )
 }
 
 function Actions(): React.ReactElement {
@@ -63,9 +44,8 @@ function Actions(): React.ReactElement {
 
 export function Header(): React.ReactElement {
   return (
-    <header className="flex items-center gap-10 h-24">
+    <header className="flex items-center justify-between gap-10 h-24">
       <Brand />
-      <Navigation />
       <Actions />
     </header>
   )
