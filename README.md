@@ -1,28 +1,24 @@
-# Next.js Site Starter
+# Sonnible Site
 
-_"Starter project to create website with Next.js"_
+_"Official website for sonibble"_
 
-This project is a starter project to create website with Next.js. This project is build with Tailwindcss, Radix UI, and Vercel. Allow you to create website faster and with simplicity.
+Sonibble is productize service business for web design, that help business to start, build, support and grow the business by offering a product that build using formula that combine website, markting, and design to lift the business profit.
 
-When create a website from scratch, you need to create many things. This project is a starter project to create website with Next.js. This project is build with Tailwindcss, Radix UI, and Vercel. Allow you to create website faster without waste your time.
+The idea is to make the website simple and convert the audiences into clients. The website is the main marketing channel for the business. It is also the place where the business can showcase their products and services.
 
-The starter is fully customizable and you can change the design and content. You can also add more feature to your website. Support out of the box with Typescript, Tailwindcss, Radix UI, and Vercel.
+You can see the live site [usesonibble.site](https://www.usesonibble.site)
 
 ## Features
 
-This project is contain buch of feature included to help you to ship site faster.
+This website build using simple and minimal design principles. You can find the list of features below.
 
-- Predefined basic components
-- Using the flexible and scalable folder structure (screaming architecture)
-- Analytics integrations (Vercel, Google Analytics, Posthog)
-- SEO friendly (SEO, Open Graph, Twitter Card)
-- Dynamic rendering (SSG, SSR, ISR)
-- Simplify animation element using motion
-- Support remote md and mdx files content
-- Predefind script for development, production, format and linting
-- Packed with github actions support (release, production, beautify, and lighthouse test & reports)
-- Include with issue template for bug report and feature request
-- Fully documentation
+- Landing page
+- SEO
+- Contact
+- Privacy policy
+- Terms of use
+- About
+- Newsletter
 
 ## Stacks
 
