@@ -53,7 +53,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fonts.inter.variable}`}
+      className={`${fonts.figtree.variable}`}
     >
       <PosthogProvider>
         <body suppressHydrationWarning>
