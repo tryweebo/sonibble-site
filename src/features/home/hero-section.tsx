@@ -8,7 +8,7 @@ export function HeroSection(): React.ReactElement {
       <div className="flex items-center">
         <SectionLabel>Business favorites ++</SectionLabel>
       </div>
-      <h2 className="text-6xl font-medium text-center !leading-tight mt-10">
+      <h2 className="text-6xl font-medium text-center leading-tight mt-10">
         Help business to grow
         <br className="hidden laptop:block" />
         scale & win the game
