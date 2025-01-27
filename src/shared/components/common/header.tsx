@@ -16,11 +16,6 @@ function Brand(): React.ReactElement {
   )
 }
 
-type NavItemProps = {
-  href: string
-  children: React.ReactNode
-}
-
 function Actions(): React.ReactElement {
   return (
     <div className="flex relative z-10 gap-2">
