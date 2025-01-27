@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function HomePage(): React.ReactElement {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-36">
       <HeroSection />
       <ProcessSection />
       <BenefitsSection />
