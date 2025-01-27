@@ -29,7 +29,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={mergeClass(
-        'flex flex-1 gap-3 items-center text-sm !font-medium text-left justify-between transition-all duration-300 [&[data-state=open]>i]:rotate-180',
+        'flex flex-1 gap-3 items-center text-sm font-medium text-left justify-between transition-all duration-300 [&[data-state=open]>i]:rotate-180',
         className,
       )}
       {...props}
@@ -47,7 +47,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm text-foreground/60 !leading-6 transition-all duration-700"
+    className="overflow-hidden text-sm text-foreground/60 leading-6 transition-all duration-700"
     {...props}
   >
     <div className={mergeClass('py-4', className)}>{children}</div>
