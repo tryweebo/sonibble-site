@@ -1,8 +1,8 @@
 import * as React from 'react'
 import type { Metadata } from 'next'
 import '@shared/styles/globals.css'
+import '@flaticon/flaticon-uicons/css/all/all.css'
 import { config, sharedMetadata } from '@shared/libs'
-import { Analytics as VercelAnalytics } from '@vercel/analytics/react'
 import { ThemeProvider, PosthogProvider } from '@shared/providers'
 import { Footer, Header, Toaster, CenteredLayout } from '@shared/components'
 import { fonts } from '@shared/fonts'
@@ -73,8 +73,6 @@ export default function RootLayout({
 
             <Toaster />
           </ThemeProvider>
-
-          <VercelAnalytics />
         </body>
       </PosthogProvider>
     </html>
