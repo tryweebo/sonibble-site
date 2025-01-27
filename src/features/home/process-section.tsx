@@ -7,7 +7,7 @@ export function ProcessSection(): React.ReactElement {
       <div className="flex items-center">
         <SectionLabel>How it works</SectionLabel>
       </div>
-      <h2 className="text-6xl font-medium text-center !leading-tight mt-10">
+      <h2 className="text-6xl font-medium text-center leading-tight mt-10">
         Winning online presence
         <br />& build reputation
       </h2>
