@@ -12,7 +12,9 @@ export function ArticleContent({
   className,
 }: ArticleContentProps): React.ReactElement {
   return (
-    <article className={`${mergeClass('prose max-w-none', className)}`}>
+    <article
+      className={`${mergeClass('prose max-w-none overflow-hidden', className)}`}
+    >
       {children}
     </article>
   )
