@@ -15,7 +15,7 @@ export default function GlobalError({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fonts.figtree.variable}`}
+      className={`${fonts.inter.variable} ${fonts.bricolage.variable}`}
     >
       <body suppressHydrationWarning>
         <CenteredLayout>

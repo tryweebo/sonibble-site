@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import '@shared/styles/globals.css'
 import '@flaticon/flaticon-uicons/css/all/all.css'
 import { config, sharedMetadata } from '@shared/libs'
-import { ThemeProvider, PosthogProvider } from '@shared/providers'
-import { Footer, Header, Toaster, CenteredLayout } from '@shared/components'
+import { PosthogProvider } from '@shared/providers'
+import { Footer, Header, CenteredLayout } from '@shared/components'
 import { fonts } from '@shared/fonts'
 
 export const metadata: Metadata = {
@@ -53,26 +53,17 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fonts.figtree.variable}`}
+      className={`${fonts.inter.variable} ${fonts.bricolage.variable}`}
     >
       <PosthogProvider>
         <body suppressHydrationWarning>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem={true}
-            disableTransitionOnChange
-          >
-            <CenteredLayout>
-              <Header />
-              <main className="min-h-screen tablet:pt-16 pb-28 tablet:pb-56">
-                {children}
-              </main>
-              <Footer />
-            </CenteredLayout>
-
-            <Toaster />
-          </ThemeProvider>
+          <CenteredLayout>
+            <Header />
+            <main className="min-h-screen tablet:pt-16 pb-28 tablet:pb-56">
+              {children}
+            </main>
+            <Footer />
+          </CenteredLayout>
         </body>
       </PosthogProvider>
     </html>
