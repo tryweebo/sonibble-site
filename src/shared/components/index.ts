@@ -1,6 +1,5 @@
 export * from './ui/accordion'
 export * from './ui/button'
-export * from './ui/toast'
 export * from './ui/tooltip'
 
 export * from './common/content'
