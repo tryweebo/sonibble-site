@@ -1,13 +1,18 @@
-import { Figtree } from 'next/font/google'
+import { Inter, Bricolage_Grotesque } from 'next/font/google'
 
-// TODO: Add your font here
-// and add to tailwind.config.js
-const figtree = Figtree({
+const inter = Inter({
   display: 'swap',
   subsets: ['latin'],
-  variable: '--font-figtree',
+  variable: '--font-inter',
+})
+
+const bricolage = Bricolage_Grotesque({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-bricolage',
 })
 
 export const fonts = {
-  figtree,
+  inter,
+  bricolage,
 }
