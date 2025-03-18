@@ -6,6 +6,7 @@ import {
   SectionLabel,
 } from '@shared/components'
 import * as React from 'react'
+import * as motion from 'motion/react-client'
 
 type FAQ = {
   question: string
@@ -15,18 +16,38 @@ type FAQ = {
 const faqs: FAQ[] = [
   {
     question: 'How moch it cost for a website?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    answer:
+      "It's depend on your own picked plan. If you pick a custom work you will likely cost around $500 - $1200",
   },
   {
-    question: 'How moch it cost for a website?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    question: 'What if I want a fixed price quote?',
+    answer:
+      "If you are looking for a more traditional scoping method with specific timeframes, we do those too! Schedule a call and we'll run through the requirements together.",
+  },
+  {
+    question: 'Why not hire a freelancer?',
+    answer:
+      'With us you have access to a full team with a variety of skills. These can be design, Webflow development, Javascript development, SEO and more. You would need to hire multiple freelancers to have the same level of expertise.',
+  },
+  {
+    question: 'Who is it for?',
+    answer:
+      'We work with both startups and enterprises. Subscriptions work best with companies that have regular work, these can be creating new pages, adding features, ongoing redesigns and regular marketing campaigns.',
+  },
+  {
+    question: 'What can we work on?',
+    answer:
+      'Depending on the plan, the hours can be used on whatever you need at the time, it can be design, development, auditing, UX, training, you name it! We are here to help your company grow and make sure your digital campaigns go smoothly.',
   },
 ]
 
 function FAQItem({ faq, id }: { faq: FAQ; id: string }): React.ReactElement {
   const { question, answer } = faq
   return (
-    <AccordionItem value={`faq-${id}`}>
+    <AccordionItem
+      value={`faq-${id}`}
+      className="transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+    >
       <AccordionTrigger>{question}</AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>
     </AccordionItem>
@@ -35,7 +56,20 @@ function FAQItem({ faq, id }: { faq: FAQ; id: string }): React.ReactElement {
 
 export function FAQSection(): React.ReactElement {
   return (
-    <section className="flex flex-col items-center py-20" id="faqs">
+    <motion.section
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        type: 'spring',
+        damping: 8,
+        stiffness: 60,
+        ease: 'easeInOut',
+        duration: '1.2',
+      }}
+      viewport={{ once: true, margin: '0% 0% -30% 0%' }}
+      className="flex flex-col items-center py-20"
+      id="faqs"
+    >
       <div className="flex items-center">
         <SectionLabel>FAQs</SectionLabel>
       </div>
@@ -49,13 +83,13 @@ export function FAQSection(): React.ReactElement {
         <Accordion
           type="single"
           collapsible
-          className="flex flex-col tablet:w-10/12 laptop:w-8/12 gap-3"
+          className="flex flex-col w-full tablet:w-10/12 laptop:w-8/12 gap-3"
         >
           {faqs.map((faq, index) => (
             <FAQItem key={index} faq={faq} id={index.toString()} />
           ))}
         </Accordion>
       </div>
-    </section>
+    </motion.section>
   )
 }
