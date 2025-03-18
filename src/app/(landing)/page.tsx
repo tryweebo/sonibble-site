@@ -7,6 +7,7 @@ import { BenefitsSection } from './benefits-section'
 import { ServiceSection } from './service-section'
 import { FAQSection } from './faq-section'
 import { CTASection } from './cta-section'
+import { PlanSection } from './plan-section'
 
 export const metadata: Metadata = {
   title: 'Your Business Growth & Success Partner | Sonibble',
@@ -33,6 +34,7 @@ export default function HomePage(): React.ReactElement {
       <BenefitsSection />
       <ProcessSection />
       <ServiceSection />
+      <PlanSection />
       <FAQSection />
       <CTASection />
     </div>
