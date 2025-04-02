@@ -51,7 +51,7 @@ export function ServiceSection(): React.ReactElement {
         for your business
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-3 w-full mt-16">
+      <div className="flex flex-wrap justify-center gap-3 w-full tablet:w-10/12 mt-16">
         {services.map((service) => (
           <ServiceItem key={service} service={service} />
         ))}
