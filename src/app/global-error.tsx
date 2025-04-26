@@ -3,7 +3,7 @@
 import '@shared/styles/globals.css'
 import '@flaticon/flaticon-uicons/css/all/all.css'
 import { Button, CenteredLayout } from '@shared/components'
-import { fonts } from '@shared/fonts'
+import { fonts } from '@shared/libs'
 
 export default function GlobalError({
   reset,

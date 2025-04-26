@@ -2,10 +2,9 @@ import * as React from 'react'
 import type { Metadata } from 'next'
 import '@shared/styles/globals.css'
 import '@flaticon/flaticon-uicons/css/all/all.css'
-import { config, sharedMetadata } from '@shared/libs'
+import { config, sharedMetadata, fonts } from '@shared/libs'
 import { PosthogProvider } from '@shared/providers'
 import { Footer, Header, CenteredLayout } from '@shared/components'
-import { fonts } from '@shared/fonts'
 
 export const metadata: Metadata = {
   title: 'Your Business Growth & Success Partner | Sonibble',
