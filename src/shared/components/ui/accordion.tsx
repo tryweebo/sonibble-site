@@ -9,15 +9,19 @@ const Accordion = AccordionPrimitive.Root
 const AccordionItem = React.forwardRef<
   React.ComponentRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
->(({ className, ...props }, ref) => (
+>(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
     className={mergeClass(
-      'flex flex-col border border-border bg-surface rounded-2xl p-4',
+      'flex flex-col p-2 bg-surface rounded-3xl',
       className,
     )}
     {...props}
-  />
+  >
+    <div className="border-2 border-border border-dashed p-3 rounded-2xl">
+      {children}
+    </div>
+  </AccordionPrimitive.Item>
 ))
 AccordionItem.displayName = 'AccordionItem'
 
