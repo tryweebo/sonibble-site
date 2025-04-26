@@ -67,23 +67,29 @@ export function FAQSection(): React.ReactElement {
         duration: '1.2',
       }}
       viewport={{ once: true, margin: '0% 0% -30% 0%' }}
-      className="flex flex-col items-center py-20"
+      className="flex flex-col items-center py-28"
       id="faqs"
     >
       <div className="flex items-center">
         <SectionLabel>FAQs</SectionLabel>
       </div>
-      <h2 className="text-4xl font-semibold text-center leading-tight mt-10 font-bricolage">
+      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
         Most asked
         <br />
         questions
       </h2>
 
+      <p className="text-foreground/60 mt-10 text-center tablet:w-9/12 laptop:w-8/12 leading-relaxed text-pretty">
+        Got questions?
+        <br />
+        We’ve got the answers
+      </p>
+
       <div className="flex flex-col items-center mt-16 w-full">
         <Accordion
           type="single"
           collapsible
-          className="flex flex-col w-full tablet:w-10/12 laptop:w-8/12 gap-3"
+          className="flex flex-col w-full tablet:w-10/12 laptop:w-8/12 gap-2"
         >
           {faqs.map((faq, index) => (
             <FAQItem key={index} faq={faq} id={index.toString()} />
