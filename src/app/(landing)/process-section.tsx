@@ -15,17 +15,22 @@ export function ProcessSection(): React.ReactElement {
         duration: '1.2',
       }}
       viewport={{ once: true, margin: '0% 0% -30% 0%' }}
-      className="flex flex-col items-center py-20"
+      className="flex flex-col items-center py-28"
       id="how-it-works"
     >
       <div className="flex items-center">
         <SectionLabel>How it works</SectionLabel>
       </div>
-      <h2 className="text-4xl font-semibold text-center leading-tight mt-10 font-bricolage">
+      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
         Simple strategy to
         <br />
         win the game
       </h2>
+
+      <p className="text-foreground/60 mt-10 text-center tablet:w-9/12 laptop:w-8/12 leading-relaxed text-pretty">
+        We'll go with a 4-step plan. We’ll handle the details, so you can enjoy
+        a smooth ride to your new website
+      </p>
 
       <div className="flex justify-center w-full mt-28">
         <div className="grid grid-cols-1 gap-3 tablet:w-10/12 laptop:w-8/12">
