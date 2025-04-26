@@ -15,21 +15,27 @@ export function BenefitsSection(): React.ReactElement {
         duration: '1.2',
       }}
       viewport={{ once: true, margin: '0% 0% -30% 0%' }}
-      className="flex flex-col items-center py-20"
+      className="flex flex-col items-center py-28"
       id="benefits"
     >
       <div className="flex items-center">
         <SectionLabel>Why choose us</SectionLabel>
       </div>
-      <h2 className="text-4xl font-semibold text-center leading-tight mt-10 font-bricolage">
-        Because result
+      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
+        Lift up profits
         <br />
-        matters
+        with no headache
       </h2>
+
+      <p className="text-foreground/60 mt-10 text-center tablet:w-9/12 laptop:w-8/12 leading-relaxed text-pretty">
+        We helping for your growth
+        <br />
+        not to make you suffer
+      </p>
 
       <div className="flex justify-center mt-48 w-full">
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:w-10/12">
-          <div className="flex flex-col col-span-1 border border-border bg-surface rounded-2xl p-1 overflow-hidden rotate-12 -translate-y-20 transition-all duration-300 hover:scale-95 cursor-pointer group">
+          <div className="flex flex-col col-span-1 border border-border bg-surface rounded-2xl p-1 overflow-hidden tablet:rotate-12 -translate-y-20 transition-all duration-300 hover:scale-95 cursor-pointer group">
             <div className="flex flex-col border border-border overflow-hidden rounded-xl">
               <div className="flex border-b border-border relative w-full p-3 justify-center">
                 <h3 className="font-medium text-center">Others.</h3>
@@ -69,7 +75,7 @@ export function BenefitsSection(): React.ReactElement {
             </div>
           </div>
 
-          <div className="flex flex-col col-span-1 border border-border bg-background rounded-2xl p-1 overflow-hidden -rotate-12 transition-all duration-300 hover:scale-105 hover:-translate-y-10 cursor-pointer group">
+          <div className="flex flex-col col-span-1 border border-border bg-background rounded-2xl p-1 overflow-hidden tablet:-rotate-12 transition-all duration-300 hover:scale-105 hover:-translate-y-10 cursor-pointer group">
             <div className="flex flex-col border border-border overflow-hidden rounded-xl">
               <div className="flex border-b border-border relative w-full p-3 justify-center">
                 <h3 className="font-medium text-center">Sonibble.</h3>
