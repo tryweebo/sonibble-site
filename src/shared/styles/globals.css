@@ -1,4 +1,5 @@
-@import 'tailwindcss';
+@import "@flaticon/flaticon-uicons/css/all/all.css" layer(base);
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
@@ -79,16 +80,16 @@
   font-weight: var(--font-weight-normal);
 
   a {
-    text-decoration: 'none';
-    font-weight: '400 !important';
+    text-decoration: "none";
+    font-weight: 400 !important;
 
     &:hover {
-      text-decoration: 'underline';
+      text-decoration: "underline";
     }
   }
 
   em {
-    font-style: 'italic';
+    font-style: "italic";
     color: var(--color-accent);
   }
 

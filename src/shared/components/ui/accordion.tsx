@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import * as AccordionPrimitive from '@radix-ui/react-accordion'
-import { mergeClass } from '@shared/utils'
+import * as React from "react"
+import * as AccordionPrimitive from "@radix-ui/react-accordion"
+import { mergeClass } from "@shared/libs"
 
 const Accordion = AccordionPrimitive.Root
 
@@ -13,7 +13,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={mergeClass(
-      'flex flex-col p-2 bg-surface rounded-3xl',
+      "flex flex-col p-2 bg-surface rounded-3xl",
       className,
     )}
     {...props}
@@ -23,7 +23,7 @@ const AccordionItem = React.forwardRef<
     </div>
   </AccordionPrimitive.Item>
 ))
-AccordionItem.displayName = 'AccordionItem'
+AccordionItem.displayName = "AccordionItem"
 
 const AccordionTrigger = React.forwardRef<
   React.ComponentRef<typeof AccordionPrimitive.Trigger>,
@@ -33,7 +33,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={mergeClass(
-        'flex flex-1 gap-3 items-center text-sm font-medium text-left justify-between transition-all duration-300 [&[data-state=open]>i]:rotate-180 cursor-pointer',
+        "flex flex-1 gap-3 items-center text-sm font-medium text-left justify-between transition-all duration-300 [&[data-state=open]>i]:rotate-180 cursor-pointer",
         className,
       )}
       {...props}
@@ -54,7 +54,7 @@ const AccordionContent = React.forwardRef<
     className="overflow-hidden text-sm text-foreground/60 leading-6 transition-all duration-700"
     {...props}
   >
-    <div className={mergeClass('py-4', className)}>{children}</div>
+    <div className={mergeClass("py-4", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ))
 

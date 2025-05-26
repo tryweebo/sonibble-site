@@ -1,3 +1,3 @@
-export * from './config'
-export * from './fonts'
-export * from './shared-metadata'
+export * from "./config"
+export * from "./utils"
+export * from "./shared-metadata"
