@@ -18,7 +18,7 @@ export function PlanSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-28"
@@ -27,7 +27,7 @@ export function PlanSection(): React.ReactElement {
       <div className="flex items-center">
         <SectionLabel>Plans</SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
+      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
         Simple plans
         <br />
         to scale

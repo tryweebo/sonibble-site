@@ -5,8 +5,8 @@ export function CustomPlan(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="flex flex-col col-span-2 tablet:col-span-1 bg-surface rounded-3xl p-2 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:rotate-6 hover:scale-105">
-          <div className="flex flex-col p-4 border-2 border-border border-dashed rounded-2xl h-full w-full">
+        <div className="flex flex-col col-span-2 tablet:col-span-1 bg-surface rounded-3xl p-2 cursor-pointer transition-all duration-300 hover:-translate-y-2">
+          <div className="flex flex-col p-4 rounded-2xl h-full w-full">
             <h2 className="text-xl font-medium text-pretty font-bricolage">
               Custom
             </h2>
@@ -19,8 +19,7 @@ export function CustomPlan(): React.ReactElement {
             </span>
 
             <p className="text-foreground/60 leading-relaxed mt-5 pt-5 text-pretty border-t-2 border-border border-dashed">
-              Only pay what you need and what you want for businesss help. Yuu
-              can also customize your order for services.
+              Only pay what you need and what you want for businesss help.
             </p>
           </div>
         </div>

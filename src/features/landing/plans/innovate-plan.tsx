@@ -5,8 +5,8 @@ export function InnovatePlan(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="flex flex-col col-span-2 tablet:col-span-1 bg-surface rounded-3xl p-2 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:rotate-6 hover:scale-105">
-          <div className="flex flex-col p-4 border-2 border-border border-dashed rounded-2xl h-full w-full">
+        <div className="flex flex-col col-span-2 tablet:col-span-1 bg-surface rounded-3xl p-2 cursor-pointer transition-all duration-300 hover:-translate-y-2">
+          <div className="flex flex-col p-4 rounded-2xl h-full w-full">
             <h2 className="text-xl font-medium text-pretty font-bricolage">
               Innovate
             </h2>
