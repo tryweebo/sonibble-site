@@ -1,15 +1,11 @@
-import * as React from "react"
-
-type CenteredLayoutProps = {
+interface CenteredLayoutProps {
   children: React.ReactNode
 }
 
-export function CenteredLayout({
-  children,
-}: CenteredLayoutProps): React.ReactElement {
+export function CenteredLayout({ children }: CenteredLayoutProps) {
   return (
     <div className="px-5 laptop:px-0 container mx-auto">
-      <div className="mx-auto w-full laptop:w-10/12 desktop:w-7/12 relative">
+      <div className="mx-auto w-full tablet:w-11/12 laptop:w-6/12">
         {children}
       </div>
     </div>
