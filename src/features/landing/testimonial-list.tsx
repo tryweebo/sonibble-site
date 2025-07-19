@@ -3,7 +3,7 @@
 import * as React from "react"
 import { motion } from "motion/react"
 
-type Testimonial = {
+interface Testimonial {
   name: string
   designation: string
   content: React.ReactNode
@@ -37,12 +37,6 @@ export function TestimonialList(): React.ReactElement {
 
   const [reviews, setReviews] = React.useState<Testimonial[]>(testimonials)
 
-  React.useEffect(() => {
-    startFlipping()
-
-    return () => clearInterval(interval)
-  }, [])
-
   const startFlipping = () => {
     interval = setInterval(() => {
       setReviews((prevCards: Testimonial[]) => {
@@ -52,6 +46,12 @@ export function TestimonialList(): React.ReactElement {
       })
     }, 5600)
   }
+
+  React.useEffect(() => {
+    startFlipping()
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <div className="relative h-72 w-full tablet:h-60 tablet:w-8/12">

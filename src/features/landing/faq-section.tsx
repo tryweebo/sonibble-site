@@ -8,7 +8,7 @@ import {
 import * as React from "react"
 import * as motion from "motion/react-client"
 
-type FAQ = {
+interface FAQ {
   question: string
   answer: string
 }
@@ -46,7 +46,7 @@ function FAQItem({ faq, id }: { faq: FAQ; id: string }): React.ReactElement {
   return (
     <AccordionItem
       value={`faq-${id}`}
-      className="transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+      className="transition-all duration-300 hover:-translate-y-1"
     >
       <AccordionTrigger>{question}</AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>
@@ -64,7 +64,7 @@ export function FAQSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-28"
@@ -73,7 +73,7 @@ export function FAQSection(): React.ReactElement {
       <div className="flex items-center">
         <SectionLabel>FAQs</SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
+      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
         Most asked
         <br />
         questions

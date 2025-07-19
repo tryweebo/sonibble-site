@@ -1,41 +1,29 @@
 import { SectionLabel } from "@shared/components"
-import * as React from "react"
 import * as motion from "motion/react-client"
 
-type MissionData = {
-  icon: string
-  label: string
-}
-
-const missions: MissionData[] = [
-  { icon: "fi fi-br-infinity", label: "Unlimited & flexible scaling" },
-  { icon: "fi fi-br-heart", label: "Full ownership & transparent" },
-  { icon: "fi fi-br-globe", label: "Years of experiences" },
-  { icon: "fi fi-br-running-track", label: "Pause or cancel anytime" },
-  { icon: "fi fi-br-duration-alt", label: "Rapid & reliable delivery" },
-  { icon: "fi fi-br-badge", label: "Satisfaction guaranteed" },
-  { icon: "fi fi-br-heart-partner-handshake", label: "Senior expert level" },
-  { icon: "fi fi-br-broken-chain-link-wrong", label: "Seamless integrations" },
-  { icon: "fi fi-br-surprise", label: "No cost surprises" },
-  { icon: "fi fi-br-crown", label: "Result based performance" },
+const missions: string[] = [
+  "Unlimited & flexible scaling",
+  "Full ownership & transparent",
+  "Years of experiences",
+  "Pause or cancel anytime",
+  "Rapid & reliable delivery",
+  "Satisfaction guaranteed",
+  "Senior expert level",
+  "Seamless integrations",
+  "No cost surprises",
+  "Result based performance",
 ]
 
-function MissionItem({
-  mission,
-}: {
-  mission: MissionData
-}): React.ReactElement {
-  const { icon, label } = mission
+function MissionItem({ mission }: { mission: string }) {
   return (
     <li className="flex items-center gap-2 text-foreground transition-all duration-300 cursor-pointer">
-      <i className="fi fi-sr-bullet" />
-      <i className={`${icon} text-base`} />
-      {label}
+      <i className="fi fi-sc-check-circle" />
+      {mission}
     </li>
   )
 }
 
-export function MissionSection(): React.ReactElement {
+export function MissionSection() {
   return (
     <motion.section
       initial={{ opacity: 0, y: 200 }}
@@ -45,7 +33,7 @@ export function MissionSection(): React.ReactElement {
         damping: 8,
         stiffness: 60,
         ease: "easeInOut",
-        duration: "1.2",
+        duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
       className="flex flex-col items-center py-28"
@@ -54,7 +42,7 @@ export function MissionSection(): React.ReactElement {
       <div className="flex items-center">
         <SectionLabel>Mission</SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
+      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
         We love results
         <br />
         not bloated costs

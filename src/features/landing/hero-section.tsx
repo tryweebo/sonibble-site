@@ -4,14 +4,14 @@ import * as React from "react"
 
 export function HeroSection(): React.ReactElement {
   return (
-    <section className="flex flex-col items-center pt-10 pb-28" id="hero">
+    <section className="flex flex-col items-center pb-28" id="hero">
       <div className="flex items-center">
         <SectionLabel>
           <i className="fi fi-sr-heart text-pink-400" /> Loved by 100+ top
           businesses
         </SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-bold text-center leading-tight tracking-tight mt-10 font-bricolage">
+      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
         Your business growth
         <br />& success partner
       </h2>
@@ -29,15 +29,15 @@ export function HeroSection(): React.ReactElement {
 
       <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-10">
         <span className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-          <i className="fi fi-sr-check-circle text-green-500" />
+          <i className="fi fi-sc-check-circle text-green-500" />
           Transparent
         </span>
         <span className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-          <i className="fi fi-sr-check-circle text-green-500" />
+          <i className="fi fi-sc-check-circle text-green-500" />
           ROI based
         </span>
         <span className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-          <i className="fi fi-sr-check-circle text-green-500" />
+          <i className="fi fi-sc-check-circle text-green-500" />
           Trusted partner
         </span>
       </div>
@@ -53,7 +53,8 @@ export function HeroSection(): React.ReactElement {
             to={"https://cal.com/nyomansunima/sonibble-intro-call"}
             target="_blank"
           >
-            Book free strategy call
+            Book a call
+            <i className="fi fi-sc-check-circle" />
           </Link>
         </Button>
         <Button
@@ -62,7 +63,10 @@ export function HeroSection(): React.ReactElement {
           asChild
           className="transition-all duration-300 hover:-translate-y-1"
         >
-          <Link to={"/#plans"}>See plans</Link>
+          <Link to={"/#plans"}>
+            See plans
+            <i className="fi fi-sc-heart" />
+          </Link>
         </Button>
       </div>
     </section>
