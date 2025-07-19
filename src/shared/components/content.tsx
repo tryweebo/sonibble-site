@@ -1,7 +1,7 @@
 import * as React from "react"
 import { mergeClass } from "@shared/libs"
 
-type ArticleContentProps = {
+interface ArticleContentProps {
   children: React.ReactNode
   className?: string
 }
@@ -19,7 +19,7 @@ export function ArticleContent({
   )
 }
 
-type ContentImageProps = {
+interface ContentImageProps {
   src: string
   alt: string
   height?: number

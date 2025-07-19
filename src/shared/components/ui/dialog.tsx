@@ -10,10 +10,15 @@ const DialogTrigger = DialogPrimitive.Trigger
 const DialogPortal = DialogPrimitive.Portal
 const DialogClose = DialogPrimitive.Close
 
-const DialogOverlay = React.forwardRef<
-  React.ComponentRef<typeof DialogPrimitive.Overlay>,
-  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay>
->(({ className, ...props }, ref) => (
+const DialogOverlay = ({
+  ref,
+  className,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof DialogPrimitive.Overlay> & {
+  ref?: React.RefObject<React.ComponentRef<
+    typeof DialogPrimitive.Overlay
+  > | null>
+}) => (
   <DialogPrimitive.Overlay
     ref={ref}
     className={mergeClass(
@@ -22,24 +27,30 @@ const DialogOverlay = React.forwardRef<
     )}
     {...props}
   />
-))
+)
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName
 
-const DialogContent = React.forwardRef<
-  React.ComponentRef<typeof DialogPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+const DialogContent = ({
+  ref,
+  className,
+  children,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> & {
+  ref?: React.RefObject<React.ComponentRef<
+    typeof DialogPrimitive.Content
+  > | null>
+}) => (
   <DialogPortal>
     <DialogOverlay />
     <DialogPrimitive.Content
       ref={ref}
       className={mergeClass(
-        "fixed left-[50%] top-[50%] z-50 grid w-[90%] tablet:w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-border bg-background p-2 rounded-3xl duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-bottom-[48%] data-[state=open]:slide-in-from-bottom-[48%]",
+        "fixed left-[50%] top-[50%] z-50 grid w-[90%] tablet:w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 bg-surface p-2 rounded-3xl duration-300 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-bottom-[48%] data-[state=open]:slide-in-from-bottom-[48%]",
         className,
       )}
       {...props}
     >
-      <div className="h-full w-full flex flex-col p-6 border-2 border-border border-dashed rounded-2xl">
+      <div className="h-full w-full flex flex-col p-6 rounded-2xl">
         <DialogPrimitive.Title hidden />
         <ScrollArea className="max-h-[80vh] tablet:max-h-[60vh]">
           {children}
@@ -51,7 +62,7 @@ const DialogContent = React.forwardRef<
       </div>
     </DialogPrimitive.Content>
   </DialogPortal>
-))
+)
 DialogContent.displayName = DialogPrimitive.Content.displayName
 
 export {

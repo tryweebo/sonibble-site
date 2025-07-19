@@ -6,10 +6,16 @@ import { mergeClass } from "@shared/libs"
 
 const Accordion = AccordionPrimitive.Root
 
-const AccordionItem = React.forwardRef<
-  React.ComponentRef<typeof AccordionPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
->(({ className, children, ...props }, ref) => (
+const AccordionItem = ({
+  ref,
+  className,
+  children,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item> & {
+  ref?: React.RefObject<React.ComponentRef<
+    typeof AccordionPrimitive.Item
+  > | null>
+}) => (
   <AccordionPrimitive.Item
     ref={ref}
     className={mergeClass(
@@ -18,17 +24,21 @@ const AccordionItem = React.forwardRef<
     )}
     {...props}
   >
-    <div className="border-2 border-border border-dashed p-3 rounded-2xl">
-      {children}
-    </div>
+    <div className="p-3 rounded-2xl">{children}</div>
   </AccordionPrimitive.Item>
-))
+)
 AccordionItem.displayName = "AccordionItem"
 
-const AccordionTrigger = React.forwardRef<
-  React.ComponentRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+const AccordionTrigger = ({
+  ref,
+  className,
+  children,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> & {
+  ref?: React.RefObject<React.ComponentRef<
+    typeof AccordionPrimitive.Trigger
+  > | null>
+}) => (
   <AccordionPrimitive.Header className="flex">
     <AccordionPrimitive.Trigger
       ref={ref}
@@ -42,13 +52,19 @@ const AccordionTrigger = React.forwardRef<
       <i className="fi fi-sr-plus-small text-lg transition-all duration-500" />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
-))
+)
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName
 
-const AccordionContent = React.forwardRef<
-  React.ComponentRef<typeof AccordionPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content>
->(({ className, children, ...props }, ref) => (
+const AccordionContent = ({
+  ref,
+  className,
+  children,
+  ...props
+}: React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Content> & {
+  ref?: React.RefObject<React.ComponentRef<
+    typeof AccordionPrimitive.Content
+  > | null>
+}) => (
   <AccordionPrimitive.Content
     ref={ref}
     className="overflow-hidden text-sm text-foreground/60 leading-6 transition-all duration-700"
@@ -56,7 +72,7 @@ const AccordionContent = React.forwardRef<
   >
     <div className={mergeClass("py-4", className)}>{children}</div>
   </AccordionPrimitive.Content>
-))
+)
 
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
