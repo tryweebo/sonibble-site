@@ -5,7 +5,7 @@ export function TimelineDetail(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger>
-        <span className="text-sm cursor-pointer font-bricolage text-foreground/60 font-medium transition-all duration-300 hover:text-foreground">
+        <span className="text-sm cursor-pointer font-bricolage font-medium transition-all duration-300">
           See timelines
         </span>
       </DialogTrigger>

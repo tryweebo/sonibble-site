@@ -6,8 +6,8 @@ export function ConversionOptimizationServiceItem(): React.ReactElement {
     <Dialog>
       <DialogTrigger>
         <div className="flex p-1 bg-surface rounded-3xl col-span-1 relative cursor-pointer group transition-all duration-300 hover:-translate-y-1">
-          <div className="flex items-center border-2 border-border border-dashed p-4 rounded-2xl w-full">
-            <i className="fi fi-sr-bullet text-foreground/40 transition-all duration-300 group-hover:text-blue-500" />
+          <div className="flex items-center p-4 rounded-2xl w-full">
+            <i className="fi fi-sc-check-circle" />
             <h3 className="font-medium font-bricolage leading-tight text-pretty ml-3">
               Conversion optimization
             </h3>
