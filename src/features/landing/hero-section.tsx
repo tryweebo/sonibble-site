@@ -1,6 +1,5 @@
-import { Button, SectionLabel } from "@shared/components"
-import { Link } from "react-router"
-import * as React from "react"
+import { Button, SectionLabel } from "@shared/components";
+import type * as React from "react";
 
 export function HeroSection(): React.ReactElement {
   return (
@@ -11,64 +10,65 @@ export function HeroSection(): React.ReactElement {
           businesses
         </SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
+      <h2 className="mt-10 text-center font-medium tablet:text-5xl text-3xl leading-tight tracking-tight">
         Your business growth
         <br />& success partner
       </h2>
 
-      <p className="text-foreground/60 mt-10 text-center tablet:w-9/12 laptop:w-8/12 leading-relaxed text-pretty">
+      <p className="mt-10 laptop:w-8/12 tablet:w-9/12 text-pretty text-center text-foreground/60 leading-relaxed">
         Help you with more leads, sales, buyers, customers. We give you
         solutions to kickstart and grow your business
       </p>
 
-      <span className="flex items-center gap-2 justify-center mt-5">
+      <span className="mt-5 flex items-center justify-center gap-2">
         {Array.from({ length: 5 }).map((_, index) => (
           <i className="fi fi-sr-star text-pink-500" key={index} />
         ))}
       </span>
 
-      <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-10">
-        <span className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+        <span className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-sm transition-all duration-300">
           <i className="fi fi-sc-check-circle text-green-500" />
           Transparent
         </span>
-        <span className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+        <span className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-sm transition-all duration-300">
           <i className="fi fi-sc-check-circle text-green-500" />
           ROI based
         </span>
-        <span className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+        <span className="hover:-translate-y-1 flex cursor-pointer items-center gap-2 text-sm transition-all duration-300">
           <i className="fi fi-sc-check-circle text-green-500" />
           Trusted partner
         </span>
       </div>
 
-      <div className="flex flex-col tablet:flex-row items-center gap-4 mt-16">
+      <div className="mt-16 flex tablet:flex-row flex-col items-center gap-4">
         <Button
+          asChild
+          className="hover:-translate-y-1 transition-all duration-300"
           size={"md"}
           variant={"primary"}
-          asChild
-          className="transition-all duration-300 hover:-translate-y-1"
         >
-          <Link
-            to={"https://cal.com/nyomansunima/sonibble-intro-call"}
+          <a
+            href={"https://cal.com/nyomansunima/sonibble-intro-call"}
+            rel="noopener"
             target="_blank"
           >
             Book a call
             <i className="fi fi-sc-check-circle" />
-          </Link>
+          </a>
         </Button>
         <Button
+          asChild
+          className="hover:-translate-y-1 transition-all duration-300"
           size={"md"}
           variant={"secondary"}
-          asChild
-          className="transition-all duration-300 hover:-translate-y-1"
         >
-          <Link to={"/#plans"}>
+          <a href={"/#plans"}>
             See plans
             <i className="fi fi-sc-heart" />
-          </Link>
+          </a>
         </Button>
       </div>
     </section>
-  )
+  );
 }

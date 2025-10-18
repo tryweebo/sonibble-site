@@ -1,10 +1,10 @@
-import * as React from "react"
-import { mergeClass } from "@shared/libs"
+import { mergeClass } from "@shared/libs";
+import type * as React from "react";
 
-interface ArticleContentProps {
-  children: React.ReactNode
-  className?: string
-}
+type ArticleContentProps = {
+  children: React.ReactNode;
+  className?: string;
+};
 
 export function ArticleContent({
   children,
@@ -16,16 +16,16 @@ export function ArticleContent({
     >
       {children}
     </article>
-  )
+  );
 }
 
-interface ContentImageProps {
-  src: string
-  alt: string
-  height?: number
-  width?: number
-  className?: string
-}
+type ContentImageProps = {
+  src: string;
+  alt: string;
+  height?: number;
+  width?: number;
+  className?: string;
+};
 
 export function ContentImage({
   src,
@@ -35,18 +35,18 @@ export function ContentImage({
   return (
     <div
       className={`${mergeClass(
-        "flex rounded-2xl p-1 border border-border bg-surface cursor-pointer my-4",
-        className,
+        "my-4 flex cursor-pointer rounded-2xl border border-border bg-surface p-1",
+        className
       )}`}
     >
-      <div className="relative w-full h-[200px] tablet:h-[400px] overflow-hidden rounded-xl not-prose">
+      <div className="not-prose relative h-[200px] tablet:h-[400px] w-full overflow-hidden rounded-xl">
         <img
-          src={src}
           alt={alt}
+          className="not-prose object-cover transition-all duration-300 hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-all duration-300 hover:scale-105 not-prose"
+          src={src}
         />
       </div>
     </div>
-  )
+  );
 }

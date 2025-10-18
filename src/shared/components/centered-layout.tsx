@@ -1,13 +1,13 @@
-interface CenteredLayoutProps {
-  children: React.ReactNode
-}
+type CenteredLayoutProps = {
+  children: React.ReactNode;
+};
 
 export function CenteredLayout({ children }: CenteredLayoutProps) {
   return (
-    <div className="px-5 laptop:px-0 container mx-auto">
-      <div className="mx-auto w-full tablet:w-11/12 laptop:w-6/12">
+    <div className="container mx-auto laptop:px-0 px-5">
+      <div className="mx-auto laptop:w-6/12 tablet:w-11/12 w-full">
         {children}
       </div>
     </div>
-  )
+  );
 }

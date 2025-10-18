@@ -1,45 +1,45 @@
-import { Dialog, DialogContent, DialogTrigger } from "@shared/components"
-import * as React from "react"
+import { Dialog, DialogContent, DialogTrigger } from "@shared/components";
+import type * as React from "react";
 
 export function PlanDetail(): React.ReactElement {
   return (
     <Dialog>
       <DialogTrigger>
-        <span className="text-sm cursor-pointer font-bricolage text-foreground font-medium transition-all duration-300">
+        <span className="cursor-pointer font-bricolage font-medium text-foreground text-sm transition-all duration-300">
           See details
         </span>
       </DialogTrigger>
       <DialogContent>
         <div className="flex flex-col">
-          <h3 className="text-xl font-medium font-bricolage leading-tight text-pretty">
+          <h3 className="text-pretty font-bricolage font-medium text-xl leading-tight">
             Plans details
           </h3>
 
-          <p className="text-foreground/60 mt-6 text-pretty leading-relaxed">
+          <p className="mt-6 text-pretty text-foreground/60 leading-relaxed">
             You need to know how we work and how the plans and pricing actualy
             make you easy to moving and understand.
           </p>
 
-          <p className="text-foreground/60 mt-6 text-pretty leading-relaxed">
+          <p className="mt-6 text-pretty text-foreground/60 leading-relaxed">
             Steps:
           </p>
 
-          <ul className="flex flex-col gap-2 mt-3">
-            <li className="flex items-center gap-2 transition-all duration-300 text-foreground cursor-pointer">
+          <ul className="mt-3 flex flex-col gap-2">
+            <li className="flex cursor-pointer items-center gap-2 text-foreground transition-all duration-300">
               1. Pick a plan
             </li>
-            <li className="flex items-center gap-2 transition-all duration-300 text-foreground cursor-pointer">
+            <li className="flex cursor-pointer items-center gap-2 text-foreground transition-all duration-300">
               2. Quick meeting
             </li>
-            <li className="flex items-center gap-2 transition-all duration-300 text-foreground cursor-pointer">
+            <li className="flex cursor-pointer items-center gap-2 text-foreground transition-all duration-300">
               3. Quick setup
             </li>
-            <li className="flex items-center gap-2 transition-all duration-300 text-foreground cursor-pointer">
+            <li className="flex cursor-pointer items-center gap-2 text-foreground transition-all duration-300">
               4. Seamless delivery
             </li>
           </ul>
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

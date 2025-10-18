@@ -4,14 +4,14 @@ import {
   AccordionItem,
   AccordionTrigger,
   SectionLabel,
-} from "@shared/components"
-import * as React from "react"
-import * as motion from "motion/react-client"
+} from "@shared/components";
+import * as motion from "motion/react-client";
+import type * as React from "react";
 
-interface FAQ {
-  question: string
-  answer: string
-}
+type FAQ = {
+  question: string;
+  answer: string;
+};
 
 const faqs: FAQ[] = [
   {
@@ -39,26 +39,27 @@ const faqs: FAQ[] = [
     answer:
       "Depending on the plan, the hours can be used on whatever you need at the time, it can be design, development, auditing, UX, training, you name it! We are here to help your company grow and make sure your digital campaigns go smoothly.",
   },
-]
+];
 
 function FAQItem({ faq, id }: { faq: FAQ; id: string }): React.ReactElement {
-  const { question, answer } = faq
+  const { question, answer } = faq;
   return (
     <AccordionItem
+      className="hover:-translate-y-1 transition-all duration-300"
       value={`faq-${id}`}
-      className="transition-all duration-300 hover:-translate-y-1"
     >
       <AccordionTrigger>{question}</AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>
     </AccordionItem>
-  )
+  );
 }
 
 export function FAQSection(): React.ReactElement {
   return (
     <motion.section
+      className="flex flex-col items-center py-28"
+      id="faqs"
       initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         damping: 8,
@@ -67,35 +68,34 @@ export function FAQSection(): React.ReactElement {
         duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      className="flex flex-col items-center py-28"
-      id="faqs"
+      whileInView={{ opacity: 1, y: 0 }}
     >
       <div className="flex items-center">
         <SectionLabel>FAQs</SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
+      <h2 className="mt-10 text-center font-medium tablet:text-5xl text-3xl leading-tight tracking-tight">
         Most asked
         <br />
         questions
       </h2>
 
-      <p className="text-foreground/60 mt-10 text-center tablet:w-9/12 laptop:w-8/12 leading-relaxed text-pretty">
+      <p className="mt-10 laptop:w-8/12 tablet:w-9/12 text-pretty text-center text-foreground/60 leading-relaxed">
         Got questions?
         <br />
         We’ve got the answers
       </p>
 
-      <div className="flex flex-col items-center mt-16 w-full">
+      <div className="mt-16 flex w-full flex-col items-center">
         <Accordion
-          type="single"
+          className="flex laptop:w-8/12 tablet:w-10/12 w-full flex-col gap-2"
           collapsible
-          className="flex flex-col w-full tablet:w-10/12 laptop:w-8/12 gap-2"
+          type="single"
         >
           {faqs.map((faq, index) => (
-            <FAQItem key={index} faq={faq} id={index.toString()} />
+            <FAQItem faq={faq} id={index.toString()} key={index} />
           ))}
         </Accordion>
       </div>
     </motion.section>
-  )
+  );
 }

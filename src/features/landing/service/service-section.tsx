@@ -1,19 +1,20 @@
-import { SectionLabel } from "@shared/components"
-import * as React from "react"
-import * as motion from "motion/react-client"
-import { WebDesignDevServiceItem } from "./web-design-dev"
-import { BrandingDesignServiceItem } from "./branding-design"
-import { VideoMarketingServiceItem } from "./video-marketing"
-import { GrowthMarketingServiceItem } from "./growth-marketing"
-import { AutomationAIServiceItem } from "./automation-ai"
-import { ConversionOptimizationServiceItem } from "./conversion-optimization"
-import { TimelineDetail } from "./timeline-dialog"
+import { SectionLabel } from "@shared/components";
+import * as motion from "motion/react-client";
+import type * as React from "react";
+import { AutomationAIServiceItem } from "./automation-ai";
+import { BrandingDesignServiceItem } from "./branding-design";
+import { ConversionOptimizationServiceItem } from "./conversion-optimization";
+import { GrowthMarketingServiceItem } from "./growth-marketing";
+import { TimelineDetail } from "./timeline-dialog";
+import { VideoMarketingServiceItem } from "./video-marketing";
+import { WebDesignDevServiceItem } from "./web-design-dev";
 
 export function ServiceSection(): React.ReactElement {
   return (
     <motion.section
+      className="flex flex-col items-center py-28"
+      id="services"
       initial={{ opacity: 0, y: 200 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{
         type: "spring",
         damping: 8,
@@ -22,29 +23,28 @@ export function ServiceSection(): React.ReactElement {
         duration: 1.2,
       }}
       viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      className="flex flex-col items-center py-28"
-      id="services"
+      whileInView={{ opacity: 1, y: 0 }}
     >
       <div className="flex items-center">
         <SectionLabel>Services</SectionLabel>
       </div>
-      <h2 className="text-3xl tablet:text-5xl font-medium text-center leading-tight tracking-tight mt-10">
+      <h2 className="mt-10 text-center font-medium tablet:text-5xl text-3xl leading-tight tracking-tight">
         We do all in
         <br />
         for your business
       </h2>
 
-      <p className="text-foreground/60 mt-10 text-center tablet:w-9/12 laptop:w-8/12 leading-relaxed text-pretty">
+      <p className="mt-10 laptop:w-8/12 tablet:w-9/12 text-pretty text-center text-foreground/60 leading-relaxed">
         We focus on helping you grow
         <br />
         with all in one services.
       </p>
 
-      <div className="flex mt-10">
+      <div className="mt-10 flex">
         <TimelineDetail />
       </div>
 
-      <div className="flex flex-col gap-2 justify-center w-full tablet:w-10/12 laptop:w-7/12 mt-16">
+      <div className="mt-16 flex laptop:w-7/12 tablet:w-10/12 w-full flex-col justify-center gap-2">
         <WebDesignDevServiceItem />
         <BrandingDesignServiceItem />
         <VideoMarketingServiceItem />
@@ -53,5 +53,5 @@ export function ServiceSection(): React.ReactElement {
         <GrowthMarketingServiceItem />
       </div>
     </motion.section>
-  )
+  );
 }
