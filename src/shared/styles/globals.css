@@ -17,9 +17,7 @@
   --font-*: initial;
   --font-sans: "Inter", sans-serif;
 
-  --text-sm: 0.84375rem;
-  --text-base: 0.9375rem;
-  --text-lg: 1.0625rem;
+  --leading-tight: 1.1;
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 40rem;
@@ -57,7 +55,7 @@
   }
 
   body {
-    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans subpixel-antialiased selection:bg-blue-100/90 selection:text-blue-950;
+    @apply text-base font-normal leading-normal! text-foreground bg-background font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
     font-style: normal;
   }
 
