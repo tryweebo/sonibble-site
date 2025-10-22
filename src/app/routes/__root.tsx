@@ -1,4 +1,4 @@
-import { Button, CenteredLayout, Footer, Header } from "@shared/components";
+import { Button, CenteredLayout } from "@shared/components";
 import styles from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import type * as React from "react";
@@ -18,7 +18,7 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "Your Business Growth & Success Partner | Sonibble",
+        title: "Your business growth & success partner | Sonibble",
       },
     ],
     links: [
@@ -43,11 +43,9 @@ function RootDocument({ children }: RootDocumentProps): React.ReactElement {
       </head>
       <body>
         <CenteredLayout>
-          <Header />
           <div className="min-h-screen tablet:pt-16 pb-28 tablet:pb-56">
             {children}
           </div>
-          <Footer />
         </CenteredLayout>
         <Scripts />
       </body>

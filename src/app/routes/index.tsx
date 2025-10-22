@@ -1,13 +1,11 @@
 import {
-  BenefitsSection,
+  BenefitSection,
   CTASection,
   FAQSection,
   HeroSection,
-  MissionSection,
   PlanSection,
   ProcessSection,
   ServiceSection,
-  TestimonialSection,
 } from "@features/landing";
 import { generatedMetadata } from "@shared/libs";
 import { createFileRoute } from "@tanstack/react-router";
@@ -15,7 +13,7 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: generatedMetadata({
-      title: "Your Business Growth & Success Partner | Sonibble",
+      title: "Your business growth & success partner | Sonibble",
       description:
         "We help small business, startups, and professional grow, scale & win the game",
     }),
@@ -27,11 +25,9 @@ function PageComponent() {
   return (
     <div className="flex flex-col">
       <HeroSection />
-      <MissionSection />
+      <BenefitSection />
       <ProcessSection />
       <ServiceSection />
-      <TestimonialSection />
-      <BenefitsSection />
       <PlanSection />
       <FAQSection />
       <CTASection />
