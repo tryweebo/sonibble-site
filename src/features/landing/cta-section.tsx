@@ -1,23 +1,9 @@
 import { Button, SectionLabel } from "@shared/components";
-import * as motion from "motion/react-client";
 import type * as React from "react";
 
 export function CTASection(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-28"
-      id="cta"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
+    <section className="flex flex-col items-center py-28" id="cta">
       <div className="flex items-center">
         <SectionLabel>Get started</SectionLabel>
       </div>
@@ -64,6 +50,6 @@ export function CTASection(): React.ReactElement {
           </a>
         </Button>
       </div>
-    </motion.section>
+    </section>
   );
 }

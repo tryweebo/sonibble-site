@@ -1,5 +1,4 @@
 import { SectionLabel } from "@shared/components";
-import * as motion from "motion/react-client";
 import type * as React from "react";
 import { CustomPlan } from "./custom-plan";
 import { GrowthPlan } from "./growth-plan";
@@ -10,20 +9,7 @@ import { StarterPlan } from "./starter-plan";
 
 export function PlanSection(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-28"
-      id="plans"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
+    <section className="flex flex-col items-center py-28" id="plans">
       <div className="flex items-center">
         <SectionLabel>Plans</SectionLabel>
       </div>
@@ -52,6 +38,6 @@ export function PlanSection(): React.ReactElement {
           <InnovatePlan />
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

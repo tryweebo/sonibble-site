@@ -1,5 +1,4 @@
 import { SectionLabel } from "@shared/components";
-import * as motion from "motion/react-client";
 import type * as React from "react";
 import { AutomationAIServiceItem } from "./automation-ai";
 import { BrandingDesignServiceItem } from "./branding-design";
@@ -11,20 +10,7 @@ import { WebDesignDevServiceItem } from "./web-design-dev";
 
 export function ServiceSection(): React.ReactElement {
   return (
-    <motion.section
-      className="flex flex-col items-center py-28"
-      id="services"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
+    <section className="flex flex-col items-center py-28" id="services">
       <div className="flex items-center">
         <SectionLabel>Services</SectionLabel>
       </div>
@@ -52,6 +38,6 @@ export function ServiceSection(): React.ReactElement {
         <AutomationAIServiceItem />
         <GrowthMarketingServiceItem />
       </div>
-    </motion.section>
+    </section>
   );
 }

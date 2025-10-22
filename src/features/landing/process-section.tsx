@@ -1,5 +1,4 @@
 import { SectionLabel } from "@shared/components";
-import * as motion from "motion/react-client";
 
 type Process = {
   label: string;
@@ -57,25 +56,12 @@ function ProcessItem({ process }: { process: Process }) {
 
 export function ProcessSection() {
   return (
-    <motion.section
-      className="flex flex-col items-center py-28"
-      id="how-it-works"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
+    <section className="flex flex-col items-center py-28" id="how-it-works">
       <div className="flex items-center">
         <SectionLabel>How it works</SectionLabel>
       </div>
       <h2 className="mt-10 text-center font-medium tablet:text-5xl text-3xl leading-tight tracking-tight">
-        Simple strategy to
+        Simple strategy
         <br />
         win the game
       </h2>
@@ -86,12 +72,12 @@ export function ProcessSection() {
       </p>
 
       <div className="mt-28 flex w-full justify-center">
-        <div className="flex laptop:w-8/12 tablet:w-10/12 flex-col gap-4">
+        <div className="flex laptop:w-9/12 tablet:w-10/12 flex-col gap-4">
           {processes.map((process, i) => (
             <ProcessItem key={i} process={process} />
           ))}
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

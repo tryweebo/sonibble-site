@@ -1,5 +1,4 @@
 import { SectionLabel } from "@shared/components";
-import * as motion from "motion/react-client";
 
 const missions: string[] = [
   "Unlimited & flexible scaling",
@@ -23,29 +22,16 @@ function MissionItem({ mission }: { mission: string }) {
   );
 }
 
-export function MissionSection() {
+export function BenefitSection() {
   return (
-    <motion.section
-      className="flex flex-col items-center py-28"
-      id="mission"
-      initial={{ opacity: 0, y: 200 }}
-      transition={{
-        type: "spring",
-        damping: 8,
-        stiffness: 60,
-        ease: "easeInOut",
-        duration: 1.2,
-      }}
-      viewport={{ once: true, margin: "0% 0% -30% 0%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-    >
+    <section className="flex flex-col items-center py-28" id="mission">
       <div className="flex items-center">
-        <SectionLabel>Mission</SectionLabel>
+        <SectionLabel>Benefits</SectionLabel>
       </div>
       <h2 className="mt-10 text-center font-medium tablet:text-5xl text-3xl leading-tight tracking-tight">
-        We love results
+        Big deals
         <br />
-        not bloated costs
+        no bloated costs
       </h2>
 
       <p className="mt-10 laptop:w-8/12 tablet:w-9/12 text-pretty text-center text-foreground/60 leading-relaxed">
@@ -61,6 +47,6 @@ export function MissionSection() {
           ))}
         </ul>
       </div>
-    </motion.section>
+    </section>
   );
 }
